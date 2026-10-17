@@ -2,8 +2,8 @@
 
 Work-in-progress holding page for Vira Engineering.
 
-Built with Vite, React, TypeScript and [Motion](https://motion.dev). Colours and fonts follow
-brand guideline VIRA-BR-GDL-001 (Montserrat headings, Inter body, Vira Navy and Amber).
+Built with Vite, React, TypeScript and [Motion](https://motion.dev). Colours and fonts follow the
+Vira brand guideline (Montserrat headings, Inter body, Vira Navy and Amber).
 
 ```sh
 npm install
