@@ -60,7 +60,7 @@ a {
   min-height: calc(100svh - 2 * var(--margin));
   border: 1.5px solid var(--navy);
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
   background-color: var(--white);
   background-image:
     linear-gradient(var(--navy-pale) 1px, transparent 1px),
@@ -133,80 +133,6 @@ a {
   text-transform: uppercase;
   color: var(--slate-500);
   font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-/* ---- Construction tape ---- */
-
-.tape {
-  position: relative;
-  overflow: hidden;
-  background: var(--amber);
-  color: var(--navy);
-  border-bottom: var(--line);
-  padding: 9px 0;
-}
-
-.tape::before,
-.tape::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: repeating-linear-gradient(-45deg, var(--navy) 0 10px, transparent 10px 20px);
-}
-
-.tape::before {
-  top: 0;
-}
-
-.tape::after {
-  bottom: 0;
-}
-
-.tape-track {
-  display: flex;
-  width: max-content;
-  animation: tape-scroll 60s linear infinite;
-}
-
-.tape-track span {
-  padding: 0 28px;
-  font: 600 13px/1.6 var(--font-head);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  white-space: nowrap;
-}
-
-.tape-track span::after {
-  content: '';
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  margin-left: 56px;
-  background: var(--navy);
-  transform: translateY(-2px) rotate(45deg);
-}
-
-@keyframes tape-scroll {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .tape-track {
-    animation: none;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
   white-space: nowrap;
 }
 
@@ -298,7 +224,7 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
-  max-height: max(260px, calc(100svh - 520px));
+  max-height: max(260px, calc(100svh - 470px));
   overflow: visible;
 }
 

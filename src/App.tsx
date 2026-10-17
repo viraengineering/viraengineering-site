@@ -1,7 +1,6 @@
 import { motion, useReducedMotion } from 'motion/react'
 import { Monogram } from './components/Monogram'
 import { PlotStamp } from './components/PlotStamp'
-import { Tape } from './components/Tape'
 import { TitleBlock } from './components/TitleBlock'
 import wordmark from './assets/vira-wordmark.svg'
 import { site } from './site'
@@ -35,7 +34,6 @@ export default function App() {
 
       <div className="frame">
         <PlotStamp />
-        <Tape />
 
         <header className="top">
           <img className="wordmark" src={wordmark} alt="Vira Engineering" width="240" height="107" />
